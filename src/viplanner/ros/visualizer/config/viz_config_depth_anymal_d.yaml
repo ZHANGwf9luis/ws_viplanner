@@ -1,0 +1,15 @@
+# general cfg
+image_flip:             True
+max_depth:              15
+domain:                 depth
+
+# ros topics
+vizTopic:               /viplanner/viz_path_depth
+imgTopic:               /camera/depth/image_rect_raw
+infoTopic:              /camera/depth/camera_info
+goalTopic:              /mp_waypoint
+pathTopic:              /viplanner/path
+
+# frame ids
+robot_frame:            body
+odom_frame:             camera_init
