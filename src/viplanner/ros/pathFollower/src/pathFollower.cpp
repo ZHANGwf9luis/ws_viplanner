@@ -440,7 +440,7 @@ int main(int argc, char **argv)
         else
           cmd_vel.linear.x = vehicleSpeed;
         cmd_vel.angular.z = vehicleYawRate;
-        const double linear_limit = 0.2;
+        const double linear_limit = 0.23;
         const double angular_limit = 0.1;
         if (cmd_vel.linear.x > linear_limit)
           cmd_vel.linear.x = linear_limit;
