@@ -1,6 +1,6 @@
 # planning
 main_freq:              10
-image_flip:             False
+image_flip:             True
 conv_dist:              0.5
 max_depth:              15
 overlap_ratio_thres:    0.80

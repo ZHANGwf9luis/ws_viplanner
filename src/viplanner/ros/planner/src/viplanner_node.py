@@ -812,6 +812,7 @@ class VIPlannerNode:
                     return
             else:
                 self.goal_robot_frame = self.goal_pose
+            # print(f"goal_robot_frame: {self.goal_robot_frame}")
 
             if self.goal_pose.header.frame_id != self.cfg.world_id:
                 try:
@@ -833,6 +834,7 @@ class VIPlannerNode:
                     return
             else:
                 self.goal_world_frame = self.goal_pose
+            # print(f"goal_world_frame: {self.goal_world_frame}")
 
             # get static transform and cam offset
             if self.init_goal_trans:
